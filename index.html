@@ -34,10 +34,10 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="hero-title">News Landing Page</h1>
+                    <h1 class="hero-title">A Catalog of <br />Historic Newspapers</h1>
                     <div class="hero-subtitle">
-                        Here is a Weather Landing Page with a responsive HTML/CSS landing page with a hero section,
-                        content area, and footer.
+                        Here is a Catalog of Historic Newspapers with a responsive HTML/CSS landing page with a hero
+                        section, content area, and footer.
                     </div>
                 </div>
             </div>
@@ -49,13 +49,17 @@
                     <div class="articles-text">
                         <h2 class="section-title">View Our Articles</h2>
                         <div class="section-subtitle">
-                            From current affairs to to information about historic newspapers and select digitized
-                            newspaper pages, this Landing Page has it all!
+                            Learn more about the Historic Newspapers contained within the Library of Congress database.
+                            Additionally, learn about which Newspapers existed in my home state of Virginia!
                         </div>
                     </div>
                     <div class="articles-toggle">
-                        <button class="hn toggle active">Historic Newspapers</button>
-                        <button class="hn-va toggle">Virginia Historic Newspapers</button>
+                        <button class="hn toggle active" aria-label="Historic Newspapers Button">
+                            Historic Newspapers
+                        </button>
+                        <button class="hn-va toggle" aria-label="Historic Newspapers for Virginia Button">
+                            Virginia Historic Newspapers
+                        </button>
                     </div>
                 </div>
                 <div class="articles-container active historic-newspapers" id="historic-newspapers"></div>
@@ -83,6 +87,39 @@
                                 New America's fonts are Platform and Circular, and both of those cost money $$$! I
                                 decided on Poppins because I think it looks really nice!
                             </p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            Where did you get this data?
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 14">
+                                <path
+                                    fill-rule="evenodd"
+                                    stroke="#323648"
+                                    d="M1 1.5c0 .15.05.25.15.35l12.25 11.5c.2.2.5.2.7 0l12.25-11.5c.2-.2.2-.5 0-.7a.487.487 0 0 0-.7 0L13.75 12.3 1.85 1.15c-.2-.2-.55-.2-.7 0-.1.1-.15.2-.15.35z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                I got this data from an API
+                                <a href="https://chroniclingamerica.loc.gov/about/api/" target="_blank">here</a>!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            How is the accordion created?
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 14">
+                                <path
+                                    fill-rule="evenodd"
+                                    stroke="#323648"
+                                    d="M1 1.5c0 .15.05.25.15.35l12.25 11.5c.2.2.5.2.7 0l12.25-11.5c.2-.2.2-.5 0-.7a.487.487 0 0 0-.7 0L13.75 12.3 1.85 1.15c-.2-.2-.55-.2-.7 0-.1.1-.15.2-.15.35z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="accordion-content">
+                            <p>It's created using jQuery!</p>
                         </div>
                     </div>
                 </div>
