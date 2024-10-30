@@ -1,0 +1,74 @@
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 30;
+}
+
+.logo {
+    max-width: 170px;
+
+    svg {
+        width: 100%;
+        height: auto;
+    }
+
+    svg path {
+        fill: #231f20;
+    }
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+
+    @include min($md) {
+        flex-direction: row;
+    }
+}
+
+.phone-menu {
+    color: $color-body;
+    font-weight: 600;
+    transition: color 0.2s ease;
+    font-size: 1.6rem;
+
+    @include min($md) {
+        font-size: 2rem;
+    }
+
+    &:hover {
+        color: $color-green;
+        text-decoration: none;
+    }
+}
+
+.nav-wrap {
+    span {
+        font-style: italic;
+        font-size: 1.4rem;
+        margin-right: 6px;
+
+        @include min($md) {
+            font-size: 1.6rem;
+        }
+    }
+
+    a {
+        color: $color-body;
+        font-size: 1.8rem;
+        font-weight: 700;
+
+        @include min($md) {
+            font-size: 2rem;
+        }
+    }
+}

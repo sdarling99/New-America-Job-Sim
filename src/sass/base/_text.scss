@@ -1,0 +1,126 @@
+// -----------------------------------------------------------------------------
+//! SIZING
+// -----------------------------------------------------------------------------
+
+//Note that this is all set this way so we can use a base 10 system for rems. So 1.0rem = 10px, 1.6rem = 16px, and so on.
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: $font-body;
+    color: $color-body;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-variant-ligatures: common-ligatures;
+}
+
+// -----------------------------------------------------------------------------
+//! HEADINGS
+// -----------------------------------------------------------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-headings;
+    line-height: 1.2;
+}
+
+// -----------------------------------------------------------------------------
+//! COPY
+// -----------------------------------------------------------------------------
+
+p {
+    line-height: 1.5;
+    // margin: 0;
+    font-size: 1em;
+    font-family: $font-body;
+    font-variant-numeric: lining-nums;
+    font-feature-settings: "lnum";
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    a {
+        color: $color-green;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.2s ease;
+
+        &:hover {
+            border-color: $color-green;
+            text-decoration: none;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+
+    li {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.section-title,
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: $font-headings;
+    margin-bottom: 22px;
+
+    @include min($md) {
+        font-size: 4rem;
+    }
+}
+
+.section-title,
+.section-subtitle {
+    &.center {
+        text-align: center;
+    }
+}
+
+.section-text,
+.section-subtitle {
+    font-size: 1.6rem;
+
+    @include min($md) {
+        font-size: 1.8rem;
+    }
+
+    a {
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.error404 {
+    .page-section .container {
+        max-width: 900px;
+        text-align: center;
+    }
+
+    .btn {
+        margin-top: 32px;
+    }
+}
